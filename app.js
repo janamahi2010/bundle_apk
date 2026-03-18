@@ -1415,7 +1415,7 @@ const renderSections = (query = "") => {
       if (card.classList.contains("card-unavailable")) return;
       const file = card.dataset.file;
       if (!file) return;
-      window.open(encodeURI(file), "_blank", "noopener");
+      window.location.assign(encodeURI(file));
     });
   });
 
